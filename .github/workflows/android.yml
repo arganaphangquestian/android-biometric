@@ -21,12 +21,10 @@ jobs:
         java-version: 1.8
     - name: Make gradlew executable
       run: chmod +x ./gradlew
-    - name: create Folder Release
-      run: mkdir -p app/build/outputs/apk/release/
-    - name: Build with Gradle
+    - name: Build with Gradle Unsigned APK
       run: ./gradlew build
     - name: Upload APK
       uses: actions/upload-artifact@v1
       with:
           name: app
-          path: app/build/outputs/apk/release/app-release.apk
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
