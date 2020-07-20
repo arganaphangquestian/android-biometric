@@ -21,6 +21,8 @@ jobs:
         java-version: 1.8
     - name: Make gradlew executable
       run: chmod +x ./gradlew
+    - name: create Folder Release
+      run: mkdir -p app/build/outputs/apk/release/
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload APK
