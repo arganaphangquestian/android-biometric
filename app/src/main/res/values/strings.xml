@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Biometric</string>
+    <string name="login_activity">Login Activity</string>
+    <string name="home_activity">Home Activity</string>
+</resources>
